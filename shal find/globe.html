@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Explore locations | Shally Find</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="index.html">Shally<span>Find</span></a>
+      <nav>
+        <a href="index.html">Home</a><a href="find.html">Find technicians</a
+        ><a class="active" href="globe.html">Explore globe</a
+        ><a href="advertise.html">Advertise</a><a href="about.html">About</a>
+      </nav>
+    </header>
+    <main class="page globe-page">
+      <p class="eyebrow">EXPLORE BY LOCATION</p>
+      <h1>Where are the professionals?</h1>
+      <p class="lead">
+        Explore the Earth, select a location pin, and see the service area
+        associated with that listing.
+      </p>
+      <div class="globe-wrap">
+        <div id="globe"></div>
+        <div class="globe-hint">Drag to rotate · Scroll to zoom</div>
+      </div>
+      <section class="location-panel">
+        <div>
+          <p class="eyebrow">SELECTED LOCATION</p>
+          <h2 id="placeTitle">Nigeria</h2>
+          <p id="placeDescription">
+            Choose a provider pin to view their listed service area. Pins appear
+            when listings include location coordinates.
+          </p>
+        </div>
+        <a class="btn secondary" href="find.html">Browse listings</a>
+      </section>
+      <section class="section compact">
+        <h2>Use your current location</h2>
+        <p class="muted">
+          If you allow location access, your browser can show your approximate
+          current area here. Your location is not published as a technician
+          listing.
+        </p>
+        <button class="btn" id="locateBtn">Use my location</button>
+        <p id="myLocation" class="location-result">
+          Location has not been requested.
+        </p>
+      </section>
+      <p class="notice">
+        Pin accuracy depends on the coordinates entered by each provider. A pin
+        is not proof that a provider has been verified.
+      </p>
+    </main>
+    <footer>© 2026 Shally Find</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

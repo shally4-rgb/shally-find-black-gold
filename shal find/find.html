@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Find technicians | Shally Find</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="index.html">Shally<span>Find</span></a>
+      <nav>
+        <a href="index.html">Home</a
+        ><a class="active" href="find.html">Find technicians</a
+        ><a href="globe.html">Explore globe</a
+        ><a href="advertise.html">Advertise</a><a href="about.html">About</a>
+      </nav>
+    </header>
+    <main class="page">
+      <p class="eyebrow">DISCOVER LOCAL SKILLS</p>
+      <h1>Find a technician</h1>
+      <p class="lead">
+        Search by the work you need and the area you want to search in.
+      </p>
+      <div class="search-panel">
+        <input
+          id="searchTrade"
+          placeholder="Trade or service (e.g. plumber)"
+        /><input id="searchLocation" placeholder="Town, area or state" /><button
+          class="btn"
+          id="searchBtn"
+        >
+          Search
+        </button>
+      </div>
+      <div class="result-head">
+        <h2>Available listings</h2>
+        <span id="resultCount" class="muted"></span>
+      </div>
+      <div id="listingGrid" class="listing-grid"></div>
+      <p id="emptyState" class="empty" hidden>
+        No listings match yet. Try another search, or add a listing through
+        Advertise.
+      </p>
+      <p class="notice">
+        Listings saved in this demo are visible only in this browser on this
+        device. A shared public directory needs a secure online database.
+      </p>
+    </main>
+    <footer>© 2026 Shally Find</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
